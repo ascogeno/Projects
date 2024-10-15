@@ -1,0 +1,39 @@
+body {
+    background: #84817c;
+}
+
+.qbox1 {
+    margin: 70px;
+    border: 15px solid black;
+    padding: 10px 5px;
+    width: 500px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 15%;
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.qbox2 {
+    margin: 70px;
+    border: 25px dotted blue;
+    padding: 15px 25px;
+    width: 500px;
+    background: pink;
+    box-sizing: border-box;
+    border-radius: 30%;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+.qbox3 {
+    margin: 70px;
+    border: 20px solid #A67D44;
+    padding: 10px 5px;
+    width: 500px;
+    background: #EFE9E1;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    
+}
