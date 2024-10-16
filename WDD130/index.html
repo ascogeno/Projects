@@ -3,17 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>WDD130 Home Page</title>
+    <style>
+        h1{
+            color: #A67D44;
+            font-family: "Cinzel", serif;
+            font-optical-sizing: auto;
+            font-weight: medium;
+            font-style: normal;
+        }
+        #headline{
+            font-weight: bold;
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+        nav a, nav a:visited{
+            text-decoration: none;
+            color:#11100f;
+            background-color:#A67D44;
+            border: 2px solid;
+        }
+        nav a:hover{
+            color:#A67D44;
+            background-color:#5D1C34;
+            border: 5px solid;
+        }
+        .links{line-height:50px;}
+
+    </style>
 </head>
-<body>
-    <h1>Welcome to Kyle's WDD130 Web Projects</h1>
+<body style="background-color: #EFE9E1">
+    <h1>WDD130 Web Projects</h1>
+    <div id="headline">
+    <p>This here is the repository for all of Kyle's projects, feel free to look around</p>
+    </div>      
+    <div class="links">
         <nav>
-            <a href="aboutme/index.html">About Me Page</a>             
+            <a href="aboutme/index.html">About Me Page</a> <br> 
             <a href="wwr/index.html">White Water Rafting Website</a>
-            <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
-            <a href="positioning.html">Positioning Activity</a>
+            <a href="wwr/site-plan-rafting.html">-White Water Rafting Siteplan</a> <br>
+            <a href="positioning.html">Positioning Activity</a> <br>
             <a href="#">Personal Website</a>
-            <a href="#">Personal Siteplan</a>
+            <a href="#">-Personal Siteplan</a> <br>
         </nav>   
+    </div>
 </body>
 </html>
