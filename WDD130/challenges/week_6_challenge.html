@@ -10,7 +10,32 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
-        
+        .grey{
+            background-color: grey;
+            height: 700px;
+            width: 100%;
+            grid-column: 2/3;
+            grid-row:1/3;
+        }
+        #cherry{
+            grid-column:1/2;
+            grid-row:1/3;
+        }
+        #tart{
+            font-size: 6em;
+            margin-top: 50px;
+            z-index:1;
+            grid-column:1/3;
+            grid-row:1/3;
+        }
+        #cherry_text{
+            font-size:5em;
+            color:rgb(154, 17, 24);
+            grid-column:2/3;
+            grid-row:2/3;
+            text-align: center;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -18,11 +43,11 @@
         <img src="images/w06_cherries.png" alt="Red Cherry">
     </div>
     <div id="tart">
-        <h1>Tart and Sweet</h1>
+        <h1>T a r t & S w e e t</h1>
     </div>
-    
+    <div class="grey"></div>
     <div id="cherry_text">
-        <h3>Cherries</h3>
+        <h3>C h e r r i e s</h3>
     </div>  
 </body>
 </html>
