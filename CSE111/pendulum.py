@@ -17,10 +17,8 @@ pendulum in meters and then computes and prints the time in
 seconds that it takes for that pendulum to swing back and forth.
 """
 #gets user input for the length of pendulum
-text = input("Length of pendulum (meters): ")
-#converts that input into an integer variable
-length = float(text)
+length = float(input("Length of pendulum (meters): "))
 #does the pendulum math
 time = (math.pi*2)*(math.sqrt(length/9.81))
-output = round(time,2)
-print(f"Time (seconds): {output}")
+#output
+print(f"Time (seconds): {time:.2f}")
