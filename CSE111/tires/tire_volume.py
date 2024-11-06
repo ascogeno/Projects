@@ -9,8 +9,11 @@ diameter = float(input("Enter the diameter of the wheel in inches (ex 15): "))
 volume = round((math.pi*(width*width)*a*(width * a + (2540*diameter)))/10000000000,2)
 #output for the user
 print(f"The approximate volume is {volume} liters")
+#kermit
 kermit = input("Would you like to see a picture of Kermit now? (Y/N)")
-if kermit == "y" or kermit == "yes" or kermit == "Y":
+low_kermit = kermit.lower()
+print(low_kermit)
+if low_kermit == "y" or low_kermit == "yes":
     print("Excellent, here ya go:")
     print("""
                       .---.     .---.
