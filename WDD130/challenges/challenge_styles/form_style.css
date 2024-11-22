@@ -1,0 +1,12 @@
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#firstName{
+    grid-column:1/2;
+}
+
+#lastName{
+    grid-column:2/3;
+}
