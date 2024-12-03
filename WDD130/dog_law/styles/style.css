@@ -158,6 +158,18 @@ nav a:hover{
     margin-right: auto;
 }
 
+#accolades a:nth-of-type(1){
+    grid-column: 1/2;
+    grid-row: 3/4;
+    color: #11100f;
+    text-align: left;
+    font-size: 0.85em;
+    width: 350px;
+    margin-top: 135px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #accolades p:nth-of-type(2){
     grid-column: 2/3;
     grid-row: 3/4;
@@ -170,6 +182,18 @@ nav a:hover{
     margin-right: auto;
 }
 
+#accolades a:nth-of-type(2){
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: #11100f;
+    text-align: left;
+    font-size: 0.85em;
+    width: 350px;
+    margin-top: 135px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #accolades p:nth-of-type(3){
     grid-column: 3/4;
     grid-row: 3/4;
@@ -178,6 +202,18 @@ nav a:hover{
     font-size: 0.85em;
     width: 350px;
     margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#accolades a:nth-of-type(3){
+    grid-column: 3/4;
+    grid-row: 3/4;
+    color: #11100f;
+    text-align: left;
+    font-size: 0.85em;
+    width: 350px;
+    margin-top: 135px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -228,129 +264,244 @@ nav a:hover{
     font-size:2.5em;
 }
 
-#tennis{
-    grid-column:1/2;
-    grid-row:2/3;
+#tennis {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
+    position: relative;  /* Make sure child elements can position themselves relative to this container */
+}
+
+#tennis_ball {
     height: 250px;
     border: 3px solid;
     object-fit: cover;
     width: 250px;
+    filter: brightness(65%);
+    display: block;  /* Ensure it fills the container */
+}
+
+#middle {
+    grid-column: 1/2; /* Make sure it's occupying the right grid area */
+    grid-row: 2/3;    /* Keep it in the correct row */
+    height: 250px;
+    width: 100%;      /* Make sure it takes the full width of the parent container */
     margin-left: auto;
     margin-right: auto;
-    filter: brightness(65%);
+    display: flex;    /* Use flexbox to center the content */
+    align-items: center;  /* Vertically center the content */
+    justify-content: center;  /* Horizontally center the content */
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;  /* Ensure it stays inside the parent container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* To center the element properly */
 }
 
-#expertise p:nth-of-type(1){
-    grid-column:1/2;
-    grid-row:2/3;
+#middle p {
+    text-align: center;  /* Ensure the text is centered */
+    font-size: 1em;     /* You can adjust the size as needed */
+    color: #EFE9E1;       /* Match the text color */
+}
+
+#tennis:hover #middle {
+    opacity: 1;  /* Reveal text when hovering over the #tennis container */
+}
+
+#treat_container {
+    grid-column: 2/3;
+    grid-row: 2/3;
     height: 250px;
     width: 250px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:100px;
-    text-align:center;
-    color: #EFE9E1;
-    z-index:1;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
+    position: relative;  /* Make sure child elements can position themselves relative to this container */
 }
 
-#treat{
-    grid-column:2/3;
-    grid-row:2/3;
+#treat {
     height: 250px;
     border: 3px solid;
     object-fit: cover;
     width: 250px;
+    filter: brightness(65%);
+    display: block;  /* Ensure it fills the container */
+}
+
+#middle1 {
+    grid-column: 2/3; /* Make sure it's occupying the right grid area */
+    grid-row: 2/3;    /* Keep it in the correct row */
+    height: 250px;
+    width: 100%;      /* Make sure it takes the full width of the parent container */
     margin-left: auto;
     margin-right: auto;
-    filter: brightness(65%);
+    display: flex;    /* Use flexbox to center the content */
+    align-items: center;  /* Vertically center the content */
+    justify-content: center;  /* Horizontally center the content */
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;  /* Ensure it stays inside the parent container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* To center the element properly */
 }
 
-#expertise p:nth-of-type(2){
-    grid-column:2/3;
-    grid-row:2/3;
+#middle1 p {
+    text-align: center;  /* Ensure the text is centered */
+    font-size: 1em;     /* You can adjust the size as needed */
+    color: #EFE9E1;       /* Match the text color */
+}
+
+#treat_container:hover #middle1 {
+    opacity: 1;  /* Reveal text when hovering over the #tennis container */
+}
+
+#vet_container {
+    grid-column: 3/4;
+    grid-row: 2/3;
     height: 250px;
     width: 250px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:100px;
-    text-align:center;
-    color: #EFE9E1;
-    z-index:1;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
+    position: relative;  /* Make sure child elements can position themselves relative to this container */
 }
 
-#vet{
-    grid-column:3/4;
-    grid-row:2/3;
+#vet {
     height: 250px;
     border: 3px solid;
     object-fit: cover;
     width: 250px;
+    filter: brightness(65%);
+    display: block;  /* Ensure it fills the container */
+}
+
+#middle2 {
+    grid-column: 3/4; /* Make sure it's occupying the right grid area */
+    grid-row: 2/3;    /* Keep it in the correct row */
+    height: 250px;
+    width: 100%;      /* Make sure it takes the full width of the parent container */
     margin-left: auto;
     margin-right: auto;
-    filter: brightness(65%);
+    display: flex;    /* Use flexbox to center the content */
+    align-items: center;  /* Vertically center the content */
+    justify-content: center;  /* Horizontally center the content */
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;  /* Ensure it stays inside the parent container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* To center the element properly */
 }
 
-#expertise p:nth-of-type(3){
-    grid-column:3/4;
-    grid-row:2/3;
-    height: 250px;
-    width: 250px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:80px;
-    text-align:center;
-    color: #EFE9E1;
-    z-index:1;
+#middle2 p {
+    text-align: center;  /* Ensure the text is centered */
+    font-size: 1em;     /* You can adjust the size as needed */
+    color: #EFE9E1;       /* Match the text color */
 }
 
-#comp{
+#vet_container:hover #middle2 {
+    opacity: 1;  /* Reveal text when hovering over the #tennis container */
+}
+
+#comp_container {
     grid-column:1/2;
     grid-row:3/4;
     height: 250px;
-    border: 3px solid;
-    object-fit: cover;
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    filter: brightness(65%);
+    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
+    position: relative;  /* Make sure child elements can position themselves relative to this container */
 }
 
-#expertise p:nth-of-type(4){
+#comp {
+    height: 250px;
+    border: 3px solid;
+    object-fit: cover;
+    width: 250px;
+    filter: brightness(65%);
+    display: block;  /* Ensure it fills the container */
+}
+
+#middle3 {
     grid-column:1/2;
+    grid-row:3/4;    /* Keep it in the correct row */
+    height: 250px;
+    width: 100%;      /* Make sure it takes the full width of the parent container */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;    /* Use flexbox to center the content */
+    align-items: center;  /* Vertically center the content */
+    justify-content: center;  /* Horizontally center the content */
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;  /* Ensure it stays inside the parent container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* To center the element properly */
+}
+
+#middle3 p {
+    text-align: center;  /* Ensure the text is centered */
+    font-size: 1em;     /* You can adjust the size as needed */
+    color: #EFE9E1;       /* Match the text color */
+}
+
+#comp_container:hover #middle3 {
+    opacity: 1;  /* Reveal text when hovering over the #tennis container */
+}
+
+#scraps_container {
+    grid-column:2/3;
     grid-row:3/4;
     height: 250px;
     width: 250px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:80px;
-    text-align:center;
-    color: #EFE9E1;
-    z-index:1;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
+    position: relative;  /* Make sure child elements can position themselves relative to this container */
 }
 
-#scraps{
-    grid-column:2/3;
-    grid-row:3/4;
+#scraps {
     height: 250px;
     border: 3px solid;
     object-fit: cover;
     width: 250px;
-    margin-left: auto;
-    margin-right: auto;
     filter: brightness(65%);
+    display: block;  /* Ensure it fills the container */
 }
 
-#expertise p:nth-of-type(5){
+#middle4 {
     grid-column:2/3;
-    grid-row:3/4;
+    grid-row:3/4;    /* Keep it in the correct row */
     height: 250px;
-    width: 250px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:80px;
-    text-align:center;
-    color: #EFE9E1;
-    z-index:1;
+    width: 100%;      /* Make sure it takes the full width of the parent container */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;    /* Use flexbox to center the content */
+    align-items: center;  /* Vertically center the content */
+    justify-content: center;  /* Horizontally center the content */
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;  /* Ensure it stays inside the parent container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* To center the element properly */
+}
+
+#middle4 p {
+    text-align: center;  /* Ensure the text is centered */
+    font-size: 1em;     /* You can adjust the size as needed */
+    color: #EFE9E1;       /* Match the text color */
+}
+
+#scraps_container:hover #middle4 {
+    opacity: 1;  /* Reveal text when hovering over the #tennis container */
 }
 
 #cat{
@@ -365,17 +516,52 @@ nav a:hover{
     filter: brightness(65%);
 }
 
-#expertise p:nth-of-type(6){
+#cat_container {
     grid-column:3/4;
     grid-row:3/4;
     height: 250px;
     width: 250px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:100px;
-    text-align:center;
-    color: #EFE9E1;
-    z-index:1;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
+    position: relative;  /* Make sure child elements can position themselves relative to this container */
+}
+
+#cat {
+    height: 250px;
+    border: 3px solid;
+    object-fit: cover;
+    width: 250px;
+    filter: brightness(65%);
+    display: block;  /* Ensure it fills the container */
+}
+
+#middle5 {
+    grid-column:3/4;
+    grid-row:3/4;    /* Keep it in the correct row */
+    height: 250px;
+    width: 100%;      /* Make sure it takes the full width of the parent container */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;    /* Use flexbox to center the content */
+    align-items: center;  /* Vertically center the content */
+    justify-content: center;  /* Horizontally center the content */
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;  /* Ensure it stays inside the parent container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* To center the element properly */
+}
+
+#middle5 p {
+    text-align: center;  /* Ensure the text is centered */
+    font-size: 1em;     /* You can adjust the size as needed */
+    color: #EFE9E1;       /* Match the text color */
+}
+
+#cat_container:hover #middle5 {
+    opacity: 1;  /* Reveal text when hovering over the #tennis container */
 }
 
 footer{
