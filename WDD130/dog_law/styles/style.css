@@ -67,7 +67,7 @@ nav a:hover{
     text-align: center;
 }
 
-#hero_text h1, #hero_text h3, #hero_text h2{
+#hero_text h1, #hero_text h3, #hero_text h2, #hero_text p{
     text-align: center;
     color: #EFE9E1;
 }
@@ -80,14 +80,14 @@ nav a:hover{
     text-align: center;
 }
 
-.book{
-    background-color: #5D1C34;
+.book {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #5D1C34; /* Burgundy color */
     color: #A67D44;
     text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
     border-radius: 5px;
+    font-size: 18px; /* Slightly larger font size for readability */
 }
 
 .book:hover{
@@ -562,6 +562,216 @@ nav a:hover{
 
 #cat_container:hover #middle5 {
     opacity: 1;  /* Reveal text when hovering over the #tennis container */
+}
+
+#info_wrapper{
+    display: grid;
+    grid-template-columns: 1000px;
+    justify-content: center;
+}
+
+.more {
+    border: 1px solid grey;
+    background: #e0e0e0;
+    padding: 0.5em; /* Reduce padding inside the box */
+    margin: 0.5em 0; /* Reduce the margin around the box */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust spacing between child elements */
+}
+.more h4 {
+    margin: 0;
+    padding-bottom: 10px; /* Add space below the heading */
+}
+.more:hover {
+  background: #d0d0d0;
+}
+.more > div {
+    display: none;
+    padding: 10px; /* Adds spacing inside the expanded dropdown */
+    background: #f5f5f5; /* Slightly lighter background for the dropdown */
+    border-radius: 5px; /* Adds rounded edges */
+    margin-top: 10px; /* Spacing above the dropdown content */
+}
+
+.more input[type=checkbox] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.more input[type=checkbox]:checked ~ div {
+  display: block;
+}
+
+.more i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 10px;
+    top: -3px;
+}
+.more i:before, .more i:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
+}
+.more i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.more i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.more input[type=checkbox]:checked ~ i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.more input[type=checkbox]:checked ~ i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.more a {
+  position: relative;
+  z-index: 1;
+}
+
+#buttons {
+    margin-top: 15px; /* Creates space above the button */ /* Aligns the button to the left, adjust as needed */
+}
+
+#first{
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+#secretary{
+    height: 375px;
+    grid-column:1/2;
+    justify-self: center;
+    border: 3px solid;
+    object-fit: cover;
+}
+
+#first h3, #first p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+}
+
+#first p{
+    margin-top: 75px;
+}
+
+#first h3{
+    font-family: 'Cinzel';
+    font-size: 1.3em;
+    font-weight:bold;
+}
+
+#second{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 75px;
+}
+
+#nick{
+    height: 375px;
+    grid-column:2/3;
+    grid-row: 1 / 4;
+    justify-self: center;
+    border: 3px solid;
+    object-fit: cover;
+}
+
+#second h3, #second p{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#second p{
+    margin-top: 75px;
+}
+
+#second h3{
+    font-family: 'Cinzel';
+}
+
+#second .more{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#third{
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 75px;
+}
+#matt{
+    height: 375px;
+    grid-row: 1 / 4;
+    justify-self: center;
+    border: 3px solid;
+    object-fit: cover;
+}
+
+#third h3, #third p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#third p{
+    margin-top: 75px;
+}
+
+#third h3{
+    font-family: 'Cinzel';
+}
+
+#third .more{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#fourth{
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 75px;
+}
+
+#miles{
+    height: 375px;
+    grid-row: 1 / 4;
+    justify-self: center;
+    border: 3px solid;
+    object-fit: cover;
+}
+
+#fourth h3, #fourth p{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#fourth p{
+    margin-top: 75px;
+}
+
+#fourth h3{
+    font-family: 'Cinzel';
+}
+
+#fourth .more{
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
 footer{

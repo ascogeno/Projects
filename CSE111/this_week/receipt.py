@@ -39,10 +39,10 @@ def main():
             next(csv_reader)# Skips header row
             for row in csv_reader:
                 p_number = row[0]
-                quantity = row[1] #defines variables for use later, names are 
-                quant = int(quantity)
+                quantity = row[1]
+                quant = int(quantity) #changes quantity from a string to an int
                 current_product=products_dict[p_number] #grabs the array assigned to the product number
-                price = float(current_product[2])
+                price = float(current_product[2]) #makes the price a float variable for use in calcs below
                 num_items += quant
                 subtotal += (price*quant)
                 print(f"{current_product[1]}: {quantity} @ {current_product[2]}")
