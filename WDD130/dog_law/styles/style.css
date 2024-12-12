@@ -36,7 +36,12 @@ nav a:hover{
     color: #5D1C34;
 }
 
-#logo_link{
+#logo_link1{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+#logo_link2{
     padding-top: 5px;
     justify-self: center;
     align-self: center;
