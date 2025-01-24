@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: Mooli, san-serif;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+}
+
+a:link,
+a:visited {
+    color: var(--accent-color);
+}
+
+header {
+    padding-bottom: 12px;
+}
+
+header,
+footer {
+    background-color: rgb(82, 71, 157);
+    color: white;
+    text-align: center;
+}
+
+/* Oi, a little transparency here for anyone poking around here. I wasn't super sure
+    what the instructions were asking regarding the button, so I asked ChatGPT for some help.  
+    The #menu-toggle and hover elements were suggestions from Chat, so I kept them. Please don't hurt me.*/
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+}
+
+#menu-toggle:hover {
+    text-decoration: underline;
+}
+
+#menu-items,
+.menu button {
+    margin: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#menu-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer {
+    padding: 15px;
+}
+
+main {
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    padding: 20px;
+}
+
+main h1 {
+    padding: 30px;
+    padding-top: 10px;
+}
+
+img {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: solid white;
+    border-width: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    gap: 25px;
+}
+
+.gallery figure:nth-child(1) {
+    grid-column: 1;
+}
+
+.gallery figure:nth-child(2) {
+    grid-column: 1;
+}
+
+.gallery figure:nth-child(3) {
+    grid-column: 1;
+}
+
+.gallery figure:nth-child(4) {
+    grid-column: 1;
+}
+
+.gallery figure:nth-child(5) {
+    grid-column: 1;
+}
+
+.gallery figure:nth-child(6) {
+    grid-column: 1;
+}
+
+.gallery figure:nth-child(7) {
+    grid-column: 1;
+}
+
+.gallery figure:nth-child(8) {
+    grid-column: 1;
+}
+
+.gallery figure:nth-child(9) {
+    grid-column: 1;
+}
+
+@media screen and (min-width: 700px) {
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery figure:nth-child(1) {
+        grid-column: 1;
+    }
+
+    .gallery figure:nth-child(2) {
+        grid-column: 2;
+    }
+
+    .gallery figure:nth-child(3) {
+        grid-column: 1;
+    }
+
+    .gallery figure:nth-child(4) {
+        grid-column: 2;
+    }
+
+    .gallery figure:nth-child(5) {
+        grid-column: 1;
+    }
+
+    .gallery figure:nth-child(6) {
+        grid-column: 2;
+    }
+
+    .gallery figure:nth-child(7) {
+        grid-column: 1;
+    }
+
+    .gallery figure:nth-child(8) {
+        grid-column: 2;
+    }
+
+    .gallery figure:nth-child(9) {
+        grid-column: 1;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .gallery figure:nth-child(1) {
+        grid-column: 1;
+    }
+
+    .gallery figure:nth-child(2) {
+        grid-column: 2;
+    }
+
+    .gallery figure:nth-child(3) {
+        grid-column: 3;
+    }
+
+    .gallery figure:nth-child(4) {
+        grid-column: 1;
+    }
+
+    .gallery figure:nth-child(5) {
+        grid-column: 2;
+    }
+
+    .gallery figure:nth-child(6) {
+        grid-column: 3;
+    }
+
+    .gallery figure:nth-child(7) {
+        grid-column: 1;
+    }
+
+    .gallery figure:nth-child(8) {
+        grid-column: 2;
+    }
+
+    .gallery figure:nth-child(9) {
+        grid-column: 3;
+    }
+}
