@@ -14,6 +14,36 @@
     margin: 0;
 }
 
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: right;
+}
+
+.viewer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-height: 75%;
+    max-width: 95%;
+}
+
+.close-viewer {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    margin-top: 50px;
+}
+
 body {
     font-family: var(--primary-font);
     font-size: 1.2em;
@@ -83,7 +113,7 @@ main h1 {
     padding-top: 10px;
 }
 
-img {
+.gallery img {
     max-width: 100%;
     width: 250px;
     height: 250px;
@@ -91,6 +121,7 @@ img {
     border: solid white;
     border-width: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .gallery {
@@ -183,6 +214,20 @@ img {
 }
 
 @media screen and (min-width: 1000px) {
+
+    .viewer {
+        margin: 25px;
+    }
+
+    .viewer img {
+        margin-top: 5px;
+        max-height: 85%;
+        max-width: 95%;
+    }
+
+    .close-viewer {
+        margin-top: 25px;
+    }
 
     #menu-toggle {
         display: none;
