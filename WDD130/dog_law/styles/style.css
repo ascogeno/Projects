@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 
 header {
-    background-color: #5D1C34;
+    background-color: #561A30;
     color: #A67D44;
     font-family: "Noto Sans", Helvetica, sans-serif;
     display: grid;
@@ -85,7 +85,7 @@ nav a:hover {
 }
 
 #hero_text h1,
-#hero_text h3 {
+#hero_text h2 {
     font-family: 'Cinzel';
     font-size: 2.5em;
 }
