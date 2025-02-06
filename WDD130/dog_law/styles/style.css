@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 
 header {
-    background-color: #561A30;
+    background-color: #3f1323;
     color: #A67D44;
     font-family: "Noto Sans", Helvetica, sans-serif;
     display: grid;
@@ -27,7 +27,7 @@ nav {
 nav a {
     text-align: center;
     text-decoration: none;
-    color: #D4B996;
+    color: #e7c69b;
     padding: 35px;
 }
 
