@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 
-header{
+header {
     background-color: #5D1C34;
     color: #A67D44;
     font-family: "Noto Sans", Helvetica, sans-serif;
@@ -10,7 +10,7 @@ header{
     opacity: .9;
 }
 
-body{
+body {
     background-color: #EFE9E1;
     color: #11100f;
     font-family: "Noto Sans", Helvetica, sans-serif;
@@ -27,26 +27,28 @@ nav {
 nav a {
     text-align: center;
     text-decoration: none;
-    color: #A67D44;
+    color: #D4B996;
     padding: 35px;
 }
 
-nav a:hover{
-    background-color: #A67D44;
-    color: #5D1C34;
+nav a:hover {
+    background-color: #D4B996;
+    color: #561A30;
 }
 
-#logo_link1{
+#logo_link1 {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
-#logo_link2{
+
+#logo_link2 {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
-.logo{
+
+.logo {
     width: 50%;
 }
 
@@ -55,54 +57,63 @@ nav a:hover{
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
 }
+
 #court_image {
     grid-column: 1/4;
     grid-row: 1/5;
     z-index: -1;
     filter: brightness(65%);
 }
-#office{
+
+#office {
     width: 100%;
 }
 
-#hero_text{
+#hero_text {
     grid-column: 2/3;
     grid-row: 2/4;
     margin-top: 100px;
     text-align: center;
 }
 
-#hero_text h1, #hero_text h3, #hero_text h2, #hero_text p{
+#hero_text h1,
+#hero_text h3,
+#hero_text h2,
+#hero_text p {
     text-align: center;
     color: #EFE9E1;
 }
-#hero_text h1, #hero_text h3{
+
+#hero_text h1,
+#hero_text h3 {
     font-family: 'Cinzel';
     font-size: 2.5em;
 }
 
-.buttons{
+.buttons {
     text-align: center;
 }
 
 .book {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #5D1C34; /* Burgundy color */
-    color: #A67D44;
+    background-color: #561A30;
+    /* Burgundy color */
+    color: #D4B996;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 18px; /* Slightly larger font size for readability */
+    font-size: 18px;
+    /* Slightly larger font size for readability */
 }
 
-.book:hover{
-    background-color: #A67D44;
-    color: #5D1C34;
+.book:hover {
+    background-color: #D4B996;
+    color: #561A30;
 }
 
-.call{
-    background-color: #5D1C34;
-    color: #A67D44;
+.call {
+    background-color: #561A30;
+    color: #D4B996;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
@@ -110,18 +121,19 @@ nav a:hover{
     border-radius: 5px;
 }
 
-.call:hover{
-    background-color: #A67D44;
-    color: #5D1C34;
+.call:hover {
+    background-color: #D4B996;
+    color: #561A30;
 }
 
-#accolades{
+#accolades {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 275px 125px 100px;
     margin-top: 30px;
 }
-#accolades h2:nth-of-type(1){
+
+#accolades h2:nth-of-type(1) {
     grid-column: 1/2;
     grid-row: 2/3;
     color: #11100f;
@@ -131,7 +143,7 @@ nav a:hover{
     margin-right: auto;
 }
 
-#accolades h2:nth-of-type(2){
+#accolades h2:nth-of-type(2) {
     grid-column: 2/3;
     grid-row: 2/3;
     color: #11100f;
@@ -141,7 +153,7 @@ nav a:hover{
     margin-right: auto;
 }
 
-#accolades h2:nth-of-type(3){
+#accolades h2:nth-of-type(3) {
     grid-column: 3/4;
     grid-row: 2/3;
     color: #11100f;
@@ -151,7 +163,7 @@ nav a:hover{
     margin-right: auto;
 }
 
-#accolades p:nth-of-type(1){
+#accolades p:nth-of-type(1) {
     grid-column: 1/2;
     grid-row: 3/4;
     color: #11100f;
@@ -163,7 +175,7 @@ nav a:hover{
     margin-right: auto;
 }
 
-#accolades a:nth-of-type(1){
+#accolades a:nth-of-type(1) {
     grid-column: 1/2;
     grid-row: 3/4;
     color: #11100f;
@@ -175,7 +187,7 @@ nav a:hover{
     margin-right: auto;
 }
 
-#accolades p:nth-of-type(2){
+#accolades p:nth-of-type(2) {
     grid-column: 2/3;
     grid-row: 3/4;
     color: #11100f;
@@ -187,7 +199,7 @@ nav a:hover{
     margin-right: auto;
 }
 
-#accolades a:nth-of-type(2){
+#accolades a:nth-of-type(2) {
     grid-column: 2/3;
     grid-row: 3/4;
     color: #11100f;
@@ -199,7 +211,7 @@ nav a:hover{
     margin-right: auto;
 }
 
-#accolades p:nth-of-type(3){
+#accolades p:nth-of-type(3) {
     grid-column: 3/4;
     grid-row: 3/4;
     color: #11100f;
@@ -211,7 +223,7 @@ nav a:hover{
     margin-right: auto;
 }
 
-#accolades a:nth-of-type(3){
+#accolades a:nth-of-type(3) {
     grid-column: 3/4;
     grid-row: 3/4;
     color: #11100f;
@@ -223,7 +235,7 @@ nav a:hover{
     margin-right: auto;
 }
 
-#act1{
+#act1 {
     grid-column: 1/2;
     grid-row: 1/2;
     height: 250px;
@@ -232,9 +244,10 @@ nav a:hover{
     border: 3px solid;
     object-fit: cover;
     width: 250px;
-    
+
 }
-#act2{
+
+#act2 {
     grid-column: 2/3;
     width: 250px;
     grid-row: 1/2;
@@ -242,7 +255,8 @@ nav a:hover{
     border: 3px solid;
     margin-right: auto;
 }
-#act3{
+
+#act3 {
     grid-column: 3/4;
     height: 250px;
     grid-row: 1/2;
@@ -253,20 +267,20 @@ nav a:hover{
     width: 250px;
 }
 
-#expertise{
+#expertise {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 150px 275px 275px;
     margin-top: 50px;
 }
 
-#expertise h1{
+#expertise h1 {
     text-align: center;
     grid-row: 1/2;
     grid-column: 1/4;
     color: #5D1C34;
     font-weight: bold;
-    font-size:2.5em;
+    font-size: 2.5em;
 }
 
 #tennis {
@@ -276,8 +290,10 @@ nav a:hover{
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
-    position: relative;  /* Make sure child elements can position themselves relative to this container */
+    transition: opacity 0.5s ease;
+    /* Smooth transition for opacity */
+    position: relative;
+    /* Make sure child elements can position themselves relative to this container */
 }
 
 #tennis_ball {
@@ -286,35 +302,48 @@ nav a:hover{
     object-fit: cover;
     width: 250px;
     filter: brightness(65%);
-    display: block;  /* Ensure it fills the container */
+    display: block;
+    /* Ensure it fills the container */
 }
 
 #middle {
-    grid-column: 1/2; /* Make sure it's occupying the right grid area */
-    grid-row: 2/3;    /* Keep it in the correct row */
+    grid-column: 1/2;
+    /* Make sure it's occupying the right grid area */
+    grid-row: 2/3;
+    /* Keep it in the correct row */
     height: 250px;
-    width: 100%;      /* Make sure it takes the full width of the parent container */
+    width: 100%;
+    /* Make sure it takes the full width of the parent container */
     margin-left: auto;
     margin-right: auto;
-    display: flex;    /* Use flexbox to center the content */
-    align-items: center;  /* Vertically center the content */
-    justify-content: center;  /* Horizontally center the content */
+    display: flex;
+    /* Use flexbox to center the content */
+    align-items: center;
+    /* Vertically center the content */
+    justify-content: center;
+    /* Horizontally center the content */
     transition: 0.5s ease;
     opacity: 0;
-    position: absolute;  /* Ensure it stays inside the parent container */
+    position: absolute;
+    /* Ensure it stays inside the parent container */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* To center the element properly */
+    transform: translate(-50%, -50%);
+    /* To center the element properly */
 }
 
 #middle p {
-    text-align: center;  /* Ensure the text is centered */
-    font-size: 1em;     /* You can adjust the size as needed */
-    color: #EFE9E1;       /* Match the text color */
+    text-align: center;
+    /* Ensure the text is centered */
+    font-size: 1em;
+    /* You can adjust the size as needed */
+    color: #EFE9E1;
+    /* Match the text color */
 }
 
 #tennis:hover #middle {
-    opacity: 1;  /* Reveal text when hovering over the #tennis container */
+    opacity: 1;
+    /* Reveal text when hovering over the #tennis container */
 }
 
 #treat_container {
@@ -324,8 +353,10 @@ nav a:hover{
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
-    position: relative;  /* Make sure child elements can position themselves relative to this container */
+    transition: opacity 0.5s ease;
+    /* Smooth transition for opacity */
+    position: relative;
+    /* Make sure child elements can position themselves relative to this container */
 }
 
 #treat {
@@ -334,35 +365,48 @@ nav a:hover{
     object-fit: cover;
     width: 250px;
     filter: brightness(65%);
-    display: block;  /* Ensure it fills the container */
+    display: block;
+    /* Ensure it fills the container */
 }
 
 #middle1 {
-    grid-column: 2/3; /* Make sure it's occupying the right grid area */
-    grid-row: 2/3;    /* Keep it in the correct row */
+    grid-column: 2/3;
+    /* Make sure it's occupying the right grid area */
+    grid-row: 2/3;
+    /* Keep it in the correct row */
     height: 250px;
-    width: 100%;      /* Make sure it takes the full width of the parent container */
+    width: 100%;
+    /* Make sure it takes the full width of the parent container */
     margin-left: auto;
     margin-right: auto;
-    display: flex;    /* Use flexbox to center the content */
-    align-items: center;  /* Vertically center the content */
-    justify-content: center;  /* Horizontally center the content */
+    display: flex;
+    /* Use flexbox to center the content */
+    align-items: center;
+    /* Vertically center the content */
+    justify-content: center;
+    /* Horizontally center the content */
     transition: 0.5s ease;
     opacity: 0;
-    position: absolute;  /* Ensure it stays inside the parent container */
+    position: absolute;
+    /* Ensure it stays inside the parent container */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* To center the element properly */
+    transform: translate(-50%, -50%);
+    /* To center the element properly */
 }
 
 #middle1 p {
-    text-align: center;  /* Ensure the text is centered */
-    font-size: 1em;     /* You can adjust the size as needed */
-    color: white;       /* Match the text color */
+    text-align: center;
+    /* Ensure the text is centered */
+    font-size: 1em;
+    /* You can adjust the size as needed */
+    color: white;
+    /* Match the text color */
 }
 
 #treat_container:hover #middle1 {
-    opacity: 1;  /* Reveal text when hovering over the #tennis container */
+    opacity: 1;
+    /* Reveal text when hovering over the #tennis container */
 }
 
 #vet_container {
@@ -372,8 +416,10 @@ nav a:hover{
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
-    position: relative;  /* Make sure child elements can position themselves relative to this container */
+    transition: opacity 0.5s ease;
+    /* Smooth transition for opacity */
+    position: relative;
+    /* Make sure child elements can position themselves relative to this container */
 }
 
 #vet {
@@ -382,46 +428,61 @@ nav a:hover{
     object-fit: cover;
     width: 250px;
     filter: brightness(65%);
-    display: block;  /* Ensure it fills the container */
+    display: block;
+    /* Ensure it fills the container */
 }
 
 #middle2 {
-    grid-column: 3/4; /* Make sure it's occupying the right grid area */
-    grid-row: 2/3;    /* Keep it in the correct row */
+    grid-column: 3/4;
+    /* Make sure it's occupying the right grid area */
+    grid-row: 2/3;
+    /* Keep it in the correct row */
     height: 250px;
-    width: 100%;      /* Make sure it takes the full width of the parent container */
+    width: 100%;
+    /* Make sure it takes the full width of the parent container */
     margin-left: auto;
     margin-right: auto;
-    display: flex;    /* Use flexbox to center the content */
-    align-items: center;  /* Vertically center the content */
-    justify-content: center;  /* Horizontally center the content */
+    display: flex;
+    /* Use flexbox to center the content */
+    align-items: center;
+    /* Vertically center the content */
+    justify-content: center;
+    /* Horizontally center the content */
     transition: 0.5s ease;
     opacity: 0;
-    position: absolute;  /* Ensure it stays inside the parent container */
+    position: absolute;
+    /* Ensure it stays inside the parent container */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* To center the element properly */
+    transform: translate(-50%, -50%);
+    /* To center the element properly */
 }
 
 #middle2 p {
-    text-align: center;  /* Ensure the text is centered */
-    font-size: 1em;     /* You can adjust the size as needed */
-    color: #EFE9E1;       /* Match the text color */
+    text-align: center;
+    /* Ensure the text is centered */
+    font-size: 1em;
+    /* You can adjust the size as needed */
+    color: #EFE9E1;
+    /* Match the text color */
 }
 
 #vet_container:hover #middle2 {
-    opacity: 1;  /* Reveal text when hovering over the #tennis container */
+    opacity: 1;
+    /* Reveal text when hovering over the #tennis container */
 }
 
 #comp_container {
-    grid-column:1/2;
-    grid-row:3/4;
+    grid-column: 1/2;
+    grid-row: 3/4;
     height: 250px;
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
-    position: relative;  /* Make sure child elements can position themselves relative to this container */
+    transition: opacity 0.5s ease;
+    /* Smooth transition for opacity */
+    position: relative;
+    /* Make sure child elements can position themselves relative to this container */
 }
 
 #comp {
@@ -430,46 +491,60 @@ nav a:hover{
     object-fit: cover;
     width: 250px;
     filter: brightness(65%);
-    display: block;  /* Ensure it fills the container */
+    display: block;
+    /* Ensure it fills the container */
 }
 
 #middle3 {
-    grid-column:1/2;
-    grid-row:3/4;    /* Keep it in the correct row */
+    grid-column: 1/2;
+    grid-row: 3/4;
+    /* Keep it in the correct row */
     height: 250px;
-    width: 100%;      /* Make sure it takes the full width of the parent container */
+    width: 100%;
+    /* Make sure it takes the full width of the parent container */
     margin-left: auto;
     margin-right: auto;
-    display: flex;    /* Use flexbox to center the content */
-    align-items: center;  /* Vertically center the content */
-    justify-content: center;  /* Horizontally center the content */
+    display: flex;
+    /* Use flexbox to center the content */
+    align-items: center;
+    /* Vertically center the content */
+    justify-content: center;
+    /* Horizontally center the content */
     transition: 0.5s ease;
     opacity: 0;
-    position: absolute;  /* Ensure it stays inside the parent container */
+    position: absolute;
+    /* Ensure it stays inside the parent container */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* To center the element properly */
+    transform: translate(-50%, -50%);
+    /* To center the element properly */
 }
 
 #middle3 p {
-    text-align: center;  /* Ensure the text is centered */
-    font-size: 1em;     /* You can adjust the size as needed */
-    color: #EFE9E1;       /* Match the text color */
+    text-align: center;
+    /* Ensure the text is centered */
+    font-size: 1em;
+    /* You can adjust the size as needed */
+    color: #EFE9E1;
+    /* Match the text color */
 }
 
 #comp_container:hover #middle3 {
-    opacity: 1;  /* Reveal text when hovering over the #tennis container */
+    opacity: 1;
+    /* Reveal text when hovering over the #tennis container */
 }
 
 #scraps_container {
-    grid-column:2/3;
-    grid-row:3/4;
+    grid-column: 2/3;
+    grid-row: 3/4;
     height: 250px;
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
-    position: relative;  /* Make sure child elements can position themselves relative to this container */
+    transition: opacity 0.5s ease;
+    /* Smooth transition for opacity */
+    position: relative;
+    /* Make sure child elements can position themselves relative to this container */
 }
 
 #scraps {
@@ -478,40 +553,52 @@ nav a:hover{
     object-fit: cover;
     width: 250px;
     filter: brightness(65%);
-    display: block;  /* Ensure it fills the container */
+    display: block;
+    /* Ensure it fills the container */
 }
 
 #middle4 {
-    grid-column:2/3;
-    grid-row:3/4;    /* Keep it in the correct row */
+    grid-column: 2/3;
+    grid-row: 3/4;
+    /* Keep it in the correct row */
     height: 250px;
-    width: 100%;      /* Make sure it takes the full width of the parent container */
+    width: 100%;
+    /* Make sure it takes the full width of the parent container */
     margin-left: auto;
     margin-right: auto;
-    display: flex;    /* Use flexbox to center the content */
-    align-items: center;  /* Vertically center the content */
-    justify-content: center;  /* Horizontally center the content */
+    display: flex;
+    /* Use flexbox to center the content */
+    align-items: center;
+    /* Vertically center the content */
+    justify-content: center;
+    /* Horizontally center the content */
     transition: 0.5s ease;
     opacity: 0;
-    position: absolute;  /* Ensure it stays inside the parent container */
+    position: absolute;
+    /* Ensure it stays inside the parent container */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* To center the element properly */
+    transform: translate(-50%, -50%);
+    /* To center the element properly */
 }
 
 #middle4 p {
-    text-align: center;  /* Ensure the text is centered */
-    font-size: 1em;     /* You can adjust the size as needed */
-    color: #EFE9E1;       /* Match the text color */
+    text-align: center;
+    /* Ensure the text is centered */
+    font-size: 1em;
+    /* You can adjust the size as needed */
+    color: #EFE9E1;
+    /* Match the text color */
 }
 
 #scraps_container:hover #middle4 {
-    opacity: 1;  /* Reveal text when hovering over the #tennis container */
+    opacity: 1;
+    /* Reveal text when hovering over the #tennis container */
 }
 
-#cat{
-    grid-column:3/4;
-    grid-row:3/4;
+#cat {
+    grid-column: 3/4;
+    grid-row: 3/4;
     height: 250px;
     border: 3px solid;
     object-fit: cover;
@@ -522,14 +609,16 @@ nav a:hover{
 }
 
 #cat_container {
-    grid-column:3/4;
-    grid-row:3/4;
+    grid-column: 3/4;
+    grid-row: 3/4;
     height: 250px;
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    transition: opacity 0.5s ease;  /* Smooth transition for opacity */
-    position: relative;  /* Make sure child elements can position themselves relative to this container */
+    transition: opacity 0.5s ease;
+    /* Smooth transition for opacity */
+    position: relative;
+    /* Make sure child elements can position themselves relative to this container */
 }
 
 #cat {
@@ -538,38 +627,50 @@ nav a:hover{
     object-fit: cover;
     width: 250px;
     filter: brightness(65%);
-    display: block;  /* Ensure it fills the container */
+    display: block;
+    /* Ensure it fills the container */
 }
 
 #middle5 {
-    grid-column:3/4;
-    grid-row:3/4;    /* Keep it in the correct row */
+    grid-column: 3/4;
+    grid-row: 3/4;
+    /* Keep it in the correct row */
     height: 250px;
-    width: 100%;      /* Make sure it takes the full width of the parent container */
+    width: 100%;
+    /* Make sure it takes the full width of the parent container */
     margin-left: auto;
     margin-right: auto;
-    display: flex;    /* Use flexbox to center the content */
-    align-items: center;  /* Vertically center the content */
-    justify-content: center;  /* Horizontally center the content */
+    display: flex;
+    /* Use flexbox to center the content */
+    align-items: center;
+    /* Vertically center the content */
+    justify-content: center;
+    /* Horizontally center the content */
     transition: 0.5s ease;
     opacity: 0;
-    position: absolute;  /* Ensure it stays inside the parent container */
+    position: absolute;
+    /* Ensure it stays inside the parent container */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* To center the element properly */
+    transform: translate(-50%, -50%);
+    /* To center the element properly */
 }
 
 #middle5 p {
-    text-align: center;  /* Ensure the text is centered */
-    font-size: 1em;     /* You can adjust the size as needed */
-    color: #EFE9E1;       /* Match the text color */
+    text-align: center;
+    /* Ensure the text is centered */
+    font-size: 1em;
+    /* You can adjust the size as needed */
+    color: #EFE9E1;
+    /* Match the text color */
 }
 
 #cat_container:hover #middle5 {
-    opacity: 1;  /* Reveal text when hovering over the #tennis container */
+    opacity: 1;
+    /* Reveal text when hovering over the #tennis container */
 }
 
-#info_wrapper{
+#info_wrapper {
     display: grid;
     grid-template-columns: 1000px;
     justify-content: center;
@@ -578,39 +679,50 @@ nav a:hover{
 .more {
     border: 1px solid grey;
     background: #e0e0e0;
-    padding: 0.5em; /* Reduce padding inside the box */
-    margin: 0.5em 0; /* Reduce the margin around the box */
+    padding: 0.5em;
+    /* Reduce padding inside the box */
+    margin: 0.5em 0;
+    /* Reduce the margin around the box */
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 5px; /* Adjust spacing between child elements */
+    gap: 5px;
+    /* Adjust spacing between child elements */
 }
+
 .more h4 {
     margin: 0;
-    padding-bottom: 10px; /* Add space below the heading */
+    padding-bottom: 10px;
+    /* Add space below the heading */
 }
+
 .more:hover {
-  background: #d0d0d0;
+    background: #d0d0d0;
 }
-.more > div {
+
+.more>div {
     display: none;
-    padding: 10px; /* Adds spacing inside the expanded dropdown */
-    background: #f5f5f5; /* Slightly lighter background for the dropdown */
-    border-radius: 5px; /* Adds rounded edges */
-    margin-top: 10px; /* Spacing above the dropdown content */
+    padding: 10px;
+    /* Adds spacing inside the expanded dropdown */
+    background: #f5f5f5;
+    /* Slightly lighter background for the dropdown */
+    border-radius: 5px;
+    /* Adds rounded edges */
+    margin-top: 10px;
+    /* Spacing above the dropdown content */
 }
 
 .more input[type=checkbox] {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
-  cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
 }
 
-.more input[type=checkbox]:checked ~ div {
-  display: block;
+.more input[type=checkbox]:checked~div {
+    display: block;
 }
 
 .more i {
@@ -620,107 +732,118 @@ nav a:hover{
     right: 10px;
     top: -3px;
 }
-.more i:before, .more i:after {
-  content: "";
-  position: absolute;
-  background-color: black;
-  width: 3px;
-  height: 9px;
-}
-.more i:before {
-  transform: translate(2px, 0) rotate(45deg);
-}
+
+.more i:before,
 .more i:after {
-  transform: translate(-2px, 0) rotate(-45deg);
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 9px;
 }
 
-.more input[type=checkbox]:checked ~ i:before {
-  transform: translate(-2px, 0) rotate(45deg);
+.more i:before {
+    transform: translate(2px, 0) rotate(45deg);
 }
-.more input[type=checkbox]:checked ~ i:after {
-  transform: translate(2px, 0) rotate(-45deg);
+
+.more i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
 }
+
+.more input[type=checkbox]:checked~i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+.more input[type=checkbox]:checked~i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
 .more a {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 #buttons {
-    margin-top: 15px; /* Creates space above the button */ /* Aligns the button to the left, adjust as needed */
+    margin-top: 15px;
+    /* Creates space above the button */
+    /* Aligns the button to the left, adjust as needed */
 }
 
-#first{
+#first {
     grid-row: 1/2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 50px;
 }
 
-#secretary{
+#secretary {
     height: 375px;
-    grid-column:1/2;
+    grid-column: 1/2;
     justify-self: center;
     border: 3px solid;
     object-fit: cover;
 }
 
-#first h3, #first p{
+#first h3,
+#first p {
     grid-column: 2/3;
     grid-row: 1/2;
     text-align: left;
 }
 
-#first p{
+#first p {
     margin-top: 75px;
 }
 
-#first h3{
+#first h3 {
     font-family: 'Cinzel';
     font-size: 1.3em;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-#second{
+#second {
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 75px;
 }
 
-#nick{
+#nick {
     height: 375px;
-    grid-column:2/3;
+    grid-column: 2/3;
     grid-row: 1 / 4;
     justify-self: center;
     border: 3px solid;
     object-fit: cover;
 }
 
-#second h3, #second p{
+#second h3,
+#second p {
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-#second p{
+#second p {
     margin-top: 75px;
 }
 
-#second h3{
+#second h3 {
     font-family: 'Cinzel';
 }
 
-#second .more{
+#second .more {
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
-#third{
+#third {
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 75px;
 }
-#matt{
+
+#matt {
     height: 375px;
     grid-row: 1 / 4;
     justify-self: center;
@@ -728,32 +851,33 @@ nav a:hover{
     object-fit: cover;
 }
 
-#third h3, #third p{
+#third h3,
+#third p {
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-#third p{
+#third p {
     margin-top: 75px;
 }
 
-#third h3{
+#third h3 {
     font-family: 'Cinzel';
 }
 
-#third .more{
+#third .more {
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-#fourth{
+#fourth {
     grid-row: 4/5;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 75px;
 }
 
-#miles{
+#miles {
     height: 375px;
     grid-row: 1 / 4;
     justify-self: center;
@@ -761,32 +885,33 @@ nav a:hover{
     object-fit: cover;
 }
 
-#fourth h3, #fourth p{
+#fourth h3,
+#fourth p {
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-#fourth p{
+#fourth p {
     margin-top: 75px;
 }
 
-#fourth h3{
+#fourth h3 {
     font-family: 'Cinzel';
 }
 
-#fourth .more{
+#fourth .more {
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
-#partone{
+#partone {
     margin-top: 50px;
-    display:grid;
+    display: grid;
     grid-template-columns: 650px 600px;
     justify-content: center;
 }
 
-#inu{
+#inu {
     grid-column: 1/2;
     grid-row: 1/5;
     height: 900px;
@@ -797,43 +922,48 @@ nav a:hover{
     justify-self: left;
 }
 
-#partone p:nth-of-type(1),#partone p:nth-of-type(4){
+#partone p:nth-of-type(1),
+#partone p:nth-of-type(4) {
     margin-top: 75px;
 }
 
-#partone p:nth-of-type(2){
+#partone p:nth-of-type(2) {
     margin-top: 145px;
 }
 
-#partone p:nth-of-type(3){
+#partone p:nth-of-type(3) {
     margin-top: 115px;
 }
 
-#partone h4:nth-of-type(1),#partone p:nth-of-type(1){
+#partone h4:nth-of-type(1),
+#partone p:nth-of-type(1) {
     grid-column: 2/3;
     grid-row: 1/2;
     text-align: left;
 }
 
-#partone h4:nth-of-type(2),#partone p:nth-of-type(2){
+#partone h4:nth-of-type(2),
+#partone p:nth-of-type(2) {
     grid-column: 2/3;
     grid-row: 2/3;
     text-align: left;
 }
 
-#partone h4:nth-of-type(3),#partone p:nth-of-type(3){
+#partone h4:nth-of-type(3),
+#partone p:nth-of-type(3) {
     grid-column: 2/3;
     grid-row: 3/4;
     text-align: left;
 }
 
-#partone h4:nth-of-type(4),#partone p:nth-of-type(4){
+#partone h4:nth-of-type(4),
+#partone p:nth-of-type(4) {
     grid-column: 2/3;
     grid-row: 4/5;
     text-align: left;
 }
 
-#parttwo{
+#parttwo {
     display: grid;
     grid-template-columns: 1250px;
     justify-content: center;
@@ -841,7 +971,7 @@ nav a:hover{
 }
 
 
-footer{
+footer {
     background-color: #5D1C34;
     color: #A67D44;
     font-family: "Noto Sans", Helvetica, sans-serif;
@@ -850,22 +980,27 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
-#logo{
-    height:200px;
-    margin:0;
+
+#logo {
+    height: 200px;
+    margin: 0;
 }
-footer a{
+
+footer a {
     color: #A67D44;
     text-decoration: none;
 }
-footer a:hover{
+
+footer a:hover {
     background-color: #A67D44;
     color: #5D1C34;
     text-decoration: underline;
 }
-footer p{
+
+footer p {
     font-size: 1.3em;
 }
-footer .social img{
+
+footer .social img {
     padding-top: 15px;
 }
