@@ -9,6 +9,11 @@
     <meta author="Kyle Rosengren">
     <link type="text/css" rel="stylesheet" href="styles/blog.css">
     <script src="blog.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -16,9 +21,9 @@
         <h1>Kids Read For Fun</h1>
         <nav>
             <ul>
-                <li>About</li>
-                <li>Archive</li>
-                <li>Search</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Search</a></li>
             </ul>
         </nav>
     </header>
@@ -31,13 +36,15 @@
                 <div>****</div>
             </section>
             <section>
-                Septimus Heap Book One: Magyk
+                <h2>Septimus Heap Book One: Magyk</h2>
                 <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
-                    alt="Book cover for Septimus Heap 1">
-                If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.
+                    alt="Book cover for Septimus Heap 1" id="bookCover">
+                <p>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
             </section>
         </article>
-        <p>Filter form will go here</p>
+        <div id="tempDivForTheFilter">
+            <p>Filter form will go here</p>
+        </div>
     </main>
 </body>
 
