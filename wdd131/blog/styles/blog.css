@@ -15,6 +15,23 @@ h2 {
     font-size: 1.8em;
 }
 
+.skiptocontent a {
+    /* set the element to absolute positioning */
+    position: absolute;
+    /* move it off screen */
+    top: -40px;
+    /* Make sure it will be on the left edge of the screen */
+    left: 0px;
+    /* Change the background and color to something that stands out */
+    background-color: #5D1C34;
+    color: #A67D44;
+}
+
+.skiptocontent a:focus {
+    /* Move it back on when focused */
+    top: 0px;
+}
+
 ul {
     list-style: none;
     display: grid;
