@@ -24,3 +24,4 @@ console.log("gpa points: " + gpaPoints);
 const gpa = gpaPoints.reduce((total, item) => {
     return total + item;
 }, 0);
+
