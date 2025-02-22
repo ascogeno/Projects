@@ -1,0 +1,132 @@
+#front,
+#back {
+    height: 250px;
+    /* Scaled from 125px */
+    width: 400px;
+    /* Scaled from 200px */
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    /* Scaled from 5px */
+    position: relative;
+}
+
+#front {
+    box-shadow: 8px 8px 16px rgb(0, 0, 0, 0.2);
+    /* Scaled from 4px */
+    z-index: 1;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#back {
+    z-index: 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#stripe {
+    width: 100%;
+    /* Full width of the card */
+    height: 20%;
+    /* Adjust the height as needed */
+    background-color: rgb(48, 48, 48);
+    position: absolute;
+    top: 15%;
+    /* Adjust vertical placement */
+    left: 0;
+}
+
+#cvc {
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    width: 50px;
+    height: 25px;
+}
+
+#cvcLabel {
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    width: 50px;
+}
+
+p {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+
+.card-image {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+}
+
+#cardNumber {
+    position: absolute;
+    top: 43%;
+    left: 7%;
+    width: 337px;
+    height: 25px;
+}
+
+#cardNumLab {
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    width: 125px;
+}
+
+#cardHolder {
+    position: absolute;
+    top: 68%;
+    left: 7%;
+    width: 200px;
+    height: 25px;
+}
+
+#cardHolLab {
+    position: absolute;
+    top: 60%;
+    left: 7%;
+    width: 125px;
+}
+
+#expiryMonth {
+    position: absolute;
+    top: 68%;
+    left: 65%;
+    width: 30px;
+    height: 25px;
+}
+
+#expiryYear {
+    position: absolute;
+    top: 68%;
+    left: 75%;
+    width: 30px;
+    height: 25px;
+}
+
+#expiry {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    width: 125px;
+}
+
+
+
+#creditCardDeets {
+    display: grid;
+    grid-template-columns: 100px 300px 100px;
+    /* Scaled from 50px, 150px, 50px */
+    grid-template-rows: 50px 176px 50px 50px;
+    /* Scaled from 25px, 88px, 25px, 25px */
+}
+
+#submit {
+    grid-row: 5/6;
+    grid-column: 3/4;
+}

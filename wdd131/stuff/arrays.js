@@ -21,7 +21,14 @@ function convertGradeToNumber(grade) {
 const gpaPoints = grades.map(convertGradeToNumber);
 console.log("gpa points: " + gpaPoints);
 
-const gpa = gpaPoints.reduce((total, item) => {
-    return total + item;
-}, 0);
+const gpa = gpaPoints.reduce((total, item) => total + item) / gpaPoints.length;
+console.log("gpa: " + gpa);
 
+const food = ["watermelon", "peach", "apple", "tomato", "grape"];
+const filtered = food.filter((food) => food.length < 6);
+console.log(filtered);
+
+const array = [12, 34, 21, 54];
+const luckyNumber = 21;
+let luckyIndex = array.indexOf(luckyNumber);
+console.log(luckyIndex);
