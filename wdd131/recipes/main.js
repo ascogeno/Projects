@@ -14,20 +14,14 @@ function getRandomListEntry(list) {
 
 function recipeTemplate(recipe) {
     return `<figure class="recipe">
-	<img src= ${recipe.image} alt=${recipe.name} />
-	<figcaption>
-		<ul class="recipe__tags">
-        ${tagsTemplate(recipe.tags)}
-		</ul>
-		<h2><a href="#">${recipe.name}</a></h2>
-		<p class="recipe__ratings">
-            ${ratingTemplate(recipe.rating)}
-		</p>
-		<p class="recipe__description">
-			${recipe.description}
-		</p>
-</figcaption>
-</figure>`;
+        <img src="${recipe.image}" alt="${recipe.name}" />
+        <figcaption class="recipe-content">
+            <span class="recipe-label">${recipe.tags.join(", ")}</span>
+            <h1 class="recipe-name">${recipe.name}</h1>
+            <span class="rating">${ratingTemplate(recipe.rating)}</span>
+            <p class="recipe-description">${recipe.description}</p>
+        </figcaption>
+    </figure>`;
 }
 
 function tagsTemplate(tags) {
@@ -51,20 +45,17 @@ function ratingTemplate(rating) {
 
 function init() {
     const recipe = getRandomListEntry(recipes);
-
     renderRecipes([recipe]);
 }
 
 init();
 
-document.getElementById("search-button").addEventListener("click", searchHandler);
+document.getElementById("searchimg").addEventListener("click", searchHandler);
 
 function searchHandler(event) {
     event.preventDefault();
-
-    const query = document.getElementById("search-input").value.toLowerCase();
+    const query = document.getElementById("search").value.toLowerCase();
     const filteredRecipes = filterRecipes(query);
-
     renderRecipes(filteredRecipes);
 }
 
@@ -73,23 +64,15 @@ function filterRecipes(query) {
         recipe.name.toLowerCase().includes(query) ||
         recipe.description.toLowerCase().includes(query) ||
         recipe.tags.find(tag => tag.toLowerCase().includes(query)) ||
-        recipe.ingredients.find(ingredient => ingredient.toLowerCase().includes(query))
+        recipe.recipeIngredient.find(ingredient => ingredient.toLowerCase().includes(query))
     ).sort((a, b) => a.name.localeCompare(b.name));
 }
 
 function renderRecipes(recipes) {
-    const recipeContainer = document.getElementById("recipe-container");
+    const recipeContainer = document.getElementById("recipe");
     recipeContainer.innerHTML = "";
 
     recipes.forEach(recipe => {
-        const recipeElement = document.createElement("div");
-        recipeElement.classList.add("recipe");
-        recipeElement.innerHTML = `
-            <h3>${recipe.name}</h3>
-            <p>${recipe.description}</p>
-            <p><strong>Tags:</strong> ${recipe.tags.join(", ")}</p>
-            <p><strong>Ingredients:</strong> ${recipe.ingredients.join(", ")}</p>
-        `;
-        recipeContainer.appendChild(recipeElement);
+        recipeContainer.innerHTML += recipeTemplate(recipe);
     });
 }
