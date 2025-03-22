@@ -6,4 +6,4 @@ function getRandomIdex(maxNum) {
     return Math.floor(Math.random() * maxNum);
 }
 
-alert(getRandomIdex(recipes.length));
+alert(getRandomIdex(recipes.length)); 
