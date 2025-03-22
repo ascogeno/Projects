@@ -49,14 +49,6 @@ function ratingTemplate(rating) {
     return html;
 }
 
-function renderRecipes(recipeList) {
-    const outputElement = document.getElementById("recipe-container");
-
-    const recipesHTML = recipeList.map(recipe => recipeTemplate(recipe)).join("");
-
-    outputElement.innerHTML = recipesHTML;
-}
-
 function init() {
     const recipe = getRandomListEntry(recipes);
 
@@ -68,7 +60,7 @@ init();
 document.getElementById("search-button").addEventListener("click", searchHandler);
 
 function searchHandler(event) {
-    event.preventDefault(); // Prevents page reload if inside a form
+    event.preventDefault();
 
     const query = document.getElementById("search-input").value.toLowerCase();
     const filteredRecipes = filterRecipes(query);
@@ -82,12 +74,12 @@ function filterRecipes(query) {
         recipe.description.toLowerCase().includes(query) ||
         recipe.tags.find(tag => tag.toLowerCase().includes(query)) ||
         recipe.ingredients.find(ingredient => ingredient.toLowerCase().includes(query))
-    ).sort((a, b) => a.name.localeCompare(b.name)); // Sort alphabetically
+    ).sort((a, b) => a.name.localeCompare(b.name));
 }
 
 function renderRecipes(recipes) {
     const recipeContainer = document.getElementById("recipe-container");
-    recipeContainer.innerHTML = ""; // Clear previous results
+    recipeContainer.innerHTML = "";
 
     recipes.forEach(recipe => {
         const recipeElement = document.createElement("div");
