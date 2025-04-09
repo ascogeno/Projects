@@ -1004,3 +1004,252 @@ footer p {
 footer .social img {
     padding-top: 15px;
 }
+
+/* Container styling */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* center the items horizontally */
+    gap: 1rem;
+    /* adds spacing between inputs and button */
+}
+
+#contactUsh1 h1 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* Headings */
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Form field groups */
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.contact-form textarea {
+    width: 95%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+/* Submit button */
+.contact-form button[type="submit"] {
+    background-color: #0077cc;
+    color: white;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+#confirmationMessage {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #efe9e1;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #561A30;
+}
+
+/* --- Adjustments for iPad Mini and similar tablets (around 768px width) - Vertical Stacking --- */
+@media (max-width: 768px) {
+    /* ... other existing styles within this media query ... */
+
+    /* --- Accolades Section - Vertical Stacking --- */
+    #accolades {
+        grid-template-columns: 1fr;
+        /* Force single column */
+        grid-template-rows: auto;
+        /* Allow rows to auto-size */
+    }
+
+    #accolades h2 {
+        /* Keep existing styles for centering and width */
+        text-align: center;
+        width: 95% !important;
+        margin: 15px auto !important;
+    }
+
+    #accolades p,
+    #accolades a {
+        /* Keep existing styles for width and margin */
+        width: 95% !important;
+        margin: 10px auto !important;
+        display: block;
+        /* Ensure they are on separate lines */
+        text-align: center;
+        /* Center the text within the stacked elements */
+    }
+
+    #accolades a {
+        margin-top: 10px !important;
+        /* Adjust spacing */
+    }
+
+    #act1,
+    #act2,
+    #act3 {
+        width: 80% !important;
+        /* Adjust image width if needed */
+        height: auto !important;
+        /* Maintain aspect ratio */
+        margin: 20px auto !important;
+        /* Center the images */
+    }
+
+    /* --- Expertise Section - Vertical Stacking --- */
+    #expertise {
+        grid-template-columns: 1fr;
+        /* Force single column */
+        grid-template-rows: auto;
+        /* Allow rows to auto-size */
+    }
+
+    #expertise h1 {
+        font-size: 1.8em;
+        /* Keep existing style */
+        text-align: center;
+        /* Center the main heading */
+    }
+
+    #tennis_container,
+    #treat_container,
+    #vet_container,
+    #comp_container,
+    #scraps_container,
+    #cat_container {
+        width: 90% !important;
+        /* Adjust container width */
+        margin: 20px auto !important;
+        /* Center the containers */
+        height: auto !important;
+        /* Allow scaling of content within */
+    }
+
+    /* The #middle, #middle1-5 and their children will naturally stack within their containers */
+
+    /* ... the rest of your existing @media (max-width: 768px) styles ... */
+}
+
+/* Very Small Screens (e.g., iPhones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 8px;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    .hamburger {
+        top: 12px;
+        right: 12px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .hamburger-line {
+        margin: 4px 0;
+    }
+
+    #hero_text h1,
+    #hero_text h2 {
+        font-size: 1.4em;
+    }
+
+    .book,
+    .call {
+        font-size: 0.85em;
+        padding: 8px 16px;
+    }
+
+    #accolades h2 {
+        font-size: 1.1em !important;
+    }
+
+    #expertise h1 {
+        font-size: 1.4em;
+    }
+
+    #middle p,
+    #middle1 p,
+    #middle2 p,
+    #middle3 p,
+    #middle4 p,
+    #middle5 p {
+        font-size: 0.85em;
+    }
+
+    .more h4 {
+        font-size: 0.9em;
+    }
+
+    .more>div {
+        font-size: 0.8em;
+    }
+
+    #first h3,
+    #second h3,
+    #third h3,
+    #fourth h3 {
+        font-size: 1em;
+    }
+
+    #partone h4,
+    #partone p {
+        font-size: 0.85em;
+    }
+
+    footer p,
+    footer a {
+        font-size: 0.8em;
+    }
+
+    footer .social img {
+        height: 25px;
+        padding: 3px;
+    }
+}

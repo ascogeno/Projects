@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <script src="javascript/dog.js" defer></script>
 </head>
 
 <body>
@@ -20,9 +21,14 @@
                 <a href="index.html">Home</a>
                 <a href="background.html">Background</a>
                 <a href="FAQ.html">FAQ</a>
-                <a href="#">Contact Us</a>
+                <a href="contact-us.html">Contact Us</a>
                 <a href="site-plan.html">Site Plan</a>
+                <p></p>
             </nav>
+            <button id="grayscaleToggle" style="position:absolute; top:50px; right:10px; z-index:1000;">Toggle
+                Grayscale</button>
+            <button id="woofButton" style="position:absolute; top:20px; right:10px; z-index:1000;">Toggle Woof
+                Mode</button>
         </header>
         <div id="hero">
             <div id="court_image">
@@ -33,36 +39,29 @@
                 <h2>Attorneys at Paw</h2>
                 <h3>Licktigators that won't back down</h3>
                 <div id="buttons">
-                    <a class="book" href="#">Schedule a Consultation</a>
-                    <a class="call" href="#">Call DOG-LAWH (364-5294)</a>
+                    <a class="book" href="contact-us.html">Schedule a Consultation</a>
+                    <a class="call" href="#" onclick="showMessage()">Call DOG-LAWH (364-5294)</a>
                 </div>
             </div>
-
         </div>
-
         <main>
             <div id="accolades">
-
                 <img src="images/courtroom_stock.jpg" id="act1" alt="empty stock courtroom">
                 <h2>Experts in the field</h2>
                 <p>With earnings totalling in a range that's too high for dogs to count, we've more than proven
                     ourselves with our track record</p>
                 <a href="FAQ.html">Read More...</a>
-
                 <img src="images/Inusuke_Naruhodog.jpg" id="act2" alt="Picture of Inusuke Naruhodog">
                 <h2>In it for the long-haul</h2>
                 <p>Following after the footsteps of his ancestor, famed English Barrister Inusuke Naruhodog, the Golden
                     family has been practicing law for literal generations</p>
                 <a href="background.html">Read More...</a>
-
                 <img src="images/cat_stock.JPG" id="act3" alt="stock picture of cats">
                 <h2>Even Cats come to us for help</h2>
                 <p>We've never taken any feline clients, but still. This just goes to show that our expertise has been
                     recognized beyond our kin</p>
                 <a href="FAQ.html">Read more...</a>
-
             </div>
-
             <div id="expertise">
                 <h1> Our Expertise</h1>
                 <div id="tennis">
